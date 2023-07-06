@@ -157,6 +157,7 @@
         const getUserMedia = async () => {
             const userMedia = await navigator.mediaDevices.getUserMedia({
                 video: true,
+                audio: true,
             });
 
             const videoEle = document.getElementById('local-video');
