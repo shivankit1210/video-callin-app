@@ -76,6 +76,7 @@
 
             const mySteam = await navigator.mediaDevices.getUserMedia({
                 video: true,
+                audio: true,
             });
 
             for (const track of mySteam.getTracks()) {
@@ -157,7 +158,7 @@
         const getUserMedia = async () => {
             const userMedia = await navigator.mediaDevices.getUserMedia({
                 video: true,
-                audio: true,
+                audio: false,
             });
 
             const videoEle = document.getElementById('local-video');
